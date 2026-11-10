@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe - Kuesioner</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<header class="wf-topbar">
+    <div class="wf-brand"><span class="wf-logo">MC</span> MindCare Student</div>
+    <span class="wf-tag">Wireframe Kuesioner</span>
+</header>
+
+<div class="wf-shell">
+    <aside class="wf-sidebar">
+        <h4>Menu Mahasiswa</h4>
+        <nav class="wf-nav">
+            <a href="#">Dashboard</a>
+            <a class="is-active" href="#">Isi Kuesioner</a>
+            <a href="#">Riwayat</a>
+            <a href="#">Profil</a>
+            <a href="#">Keluar</a>
+        </nav>
+    </aside>
+
+    <main class="wf-main">
+        <div class="wf-page-head">
+            <div>
+                <h1>Kuesioner Kesehatan Mental</h1>
+                <p>15 pertanyaan · skala 1 (sangat tidak setuju) sampai 5 (sangat setuju).</p>
+            </div>
+            <span class="wf-badge">0 dari 15 dijawab</span>
+        </div>
+
+        <div class="wf-card" style="margin-bottom:16px;">
+            <div class="wf-progress">
+                <div class="wf-bar"><span style="width:0%"></span></div>
+                <span class="wf-sub">0%</span>
+            </div>
+        </div>
+
+        <div class="wf-card">
+            <h3>C1 · Stres akademik <span class="wf-badge">Bobot 25%</span></h3>
+
+            <div class="wf-question">
+                <div class="q-text">1. Saya merasa kewalahan dengan tugas atau tuntutan akademik.</div>
+                <div class="wf-scale">
+                    <label><input type="radio" name="q1"> 1</label>
+                    <label><input type="radio" name="q1"> 2</label>
+                    <label><input type="radio" name="q1"> 3</label>
+                    <label><input type="radio" name="q1"> 4</label>
+                    <label><input type="radio" name="q1"> 5</label>
+                </div>
+            </div>
+
+            <div class="wf-question">
+                <div class="q-text">2. Saya merasa sulit mengatur waktu untuk menyelesaikan kegiatan kuliah.</div>
+                <div class="wf-scale">
+                    <label><input type="radio" name="q2"> 1</label>
+                    <label><input type="radio" name="q2"> 2</label>
+                    <label><input type="radio" name="q2"> 3</label>
+                    <label><input type="radio" name="q2"> 4</label>
+                    <label><input type="radio" name="q2"> 5</label>
+                </div>
+            </div>
+
+            <div class="wf-question">
+                <div class="q-text">3. Saya merasa tertekan ketika memikirkan nilai atau hasil akademik.</div>
+                <div class="wf-scale">
+                    <label><input type="radio" name="q3"> 1</label>
+                    <label><input type="radio" name="q3"> 2</label>
+                    <label><input type="radio" name="q3"> 3</label>
+                    <label><input type="radio" name="q3"> 4</label>
+                    <label><input type="radio" name="q3"> 5</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="wf-card" style="margin-top:16px;">
+            <h3>C2 · Kesulitan tidur <span class="wf-badge">Bobot 20%</span></h3>
+            <div class="wf-placeholder">Kelompok pertanyaan berikutnya (3 soal) mengikuti pola yang sama.</div>
+        </div>
+
+        <div class="wf-card" style="margin-top:16px; display:flex; justify-content:space-between; align-items:center; gap:12px;">
+            <span class="wf-sub">Semua pertanyaan wajib dijawab sebelum menyimpan.</span>
+            <div style="display:flex; gap:8px;">
+                <button class="wf-btn ghost">Batal</button>
+                <button class="wf-btn">Simpan &amp; Hitung SAW</button>
+            </div>
+        </div>
+
+        <p class="wf-footer">Jawabanmu bersifat rahasia dan hanya dipakai untuk skrining awal.</p>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe - Data Hasil SPK</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<header class="wf-topbar">
+    <div class="wf-brand"><span class="wf-logo">MC</span> MindCare Student</div>
+    <span class="wf-tag">Wireframe Admin</span>
+</header>
+
+<div class="wf-shell">
+    <aside class="wf-sidebar">
+        <h4>Menu Admin</h4>
+        <nav class="wf-nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Data Mahasiswa</a>
+            <a href="#">Data Kriteria</a>
+            <a href="#">Data Pertanyaan</a>
+            <a class="is-active" href="#">Hasil SPK</a>
+            <a href="#">Laporan</a>
+            <a href="#">Keluar</a>
+        </nav>
+    </aside>
+
+    <main class="wf-main">
+        <div class="wf-page-head">
+            <div>
+                <h1>Data Hasil SPK</h1>
+                <p>Semua hasil perhitungan SAW. Bobot tiap kriteria ditampilkan dalam persen.</p>
+            </div>
+            <a class="wf-btn ghost" href="#">Export CSV</a>
+        </div>
+
+        <div class="wf-card" style="margin-bottom:16px;">
+            <div class="wf-grid cols-3">
+                <div class="wf-field"><label>Cari Mahasiswa</label><input class="wf-input" placeholder="Nama / NIM"></div>
+                <div class="wf-field"><label>Kategori</label>
+                    <select class="wf-select"><option>Semua</option><option>Prioritas dukungan</option><option>Perlu perhatian</option></select>
+                </div>
+                <div class="wf-field"><label>&nbsp;</label><button class="wf-btn">Terapkan Filter</button></div>
+            </div>
+        </div>
+
+        <div class="wf-card">
+            <table class="wf-table">
+                <thead>
+                    <tr><th>Mahasiswa</th><th>Tanggal</th><th>Bobot Kriteria</th><th>Nilai Akhir</th><th>Kategori</th><th>Aksi</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alya Ramadhan<br><span class="wf-sub">23010001</span></td>
+                        <td>1 Okt 2026</td>
+                        <td><span class="wf-badge">25%</span> <span class="wf-badge">20%</span> <span class="wf-badge">25%</span> <span class="wf-badge">15%</span> <span class="wf-badge">15%</span></td>
+                        <td><b>72,67%</b></td>
+                        <td><span class="wf-badge warn">Prioritas dukungan</span></td>
+                        <td><a href="admin-detail-saw.html">Detail SAW</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bima Kurniawan<br><span class="wf-sub">23010002</span></td>
+                        <td>2 Okt 2026</td>
+                        <td><span class="wf-badge">25%</span> <span class="wf-badge">20%</span> <span class="wf-badge">25%</span> <span class="wf-badge">15%</span> <span class="wf-badge">15%</span></td>
+                        <td><b>59,67%</b></td>
+                        <td><span class="wf-badge ok">Perlu perhatian</span></td>
+                        <td><a href="admin-detail-saw.html">Detail SAW</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

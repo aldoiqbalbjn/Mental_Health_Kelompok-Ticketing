@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe - Hasil &amp; Rincian SAW</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<header class="wf-topbar">
+    <div class="wf-brand"><span class="wf-logo">MC</span> MindCare Student</div>
+    <span class="wf-tag">Wireframe Hasil SPK</span>
+</header>
+
+<div class="wf-shell">
+    <aside class="wf-sidebar">
+        <h4>Menu Mahasiswa</h4>
+        <nav class="wf-nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Isi Kuesioner</a>
+            <a href="#">Riwayat</a>
+            <a class="is-active" href="#">Hasil</a>
+            <a href="#">Profil</a>
+            <a href="#">Keluar</a>
+        </nav>
+    </aside>
+
+    <main class="wf-main">
+        <div class="wf-page-head">
+            <div>
+                <h1>Hasil Skrining &amp; Rincian SAW</h1>
+                <p>Pengisian 1 Okt 2026 03:00 · Metode Simple Additive Weighting</p>
+            </div>
+            <a class="wf-btn ghost" href="#">Kembali</a>
+        </div>
+
+        <div class="wf-grid cols-3" style="margin-bottom:16px;">
+            <div class="wf-card wf-stat">
+                <span class="label">Nilai Akhir</span>
+                <span class="value">72,67<small>%</small></span>
+            </div>
+            <div class="wf-card wf-stat">
+                <span class="label">Kategori</span>
+                <span class="value" style="font-size:20px;">Prioritas dukungan</span>
+            </div>
+            <div class="wf-card wf-stat">
+                <span class="label">Total Bobot</span>
+                <span class="value">100<small>%</small></span>
+            </div>
+        </div>
+
+        <div class="wf-card" style="margin-bottom:16px;">
+            <h3>Matriks Perhitungan SAW</h3>
+            <table class="wf-table">
+                <thead>
+                    <tr>
+                        <th>Kode</th>
+                        <th>Kriteria</th>
+                        <th>Bobot (%)</th>
+                        <th>Nilai (1-5)</th>
+                        <th>Normalisasi</th>
+                        <th>Kontribusi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>C1</td><td>Stres akademik</td><td>25%</td><td>3,33</td><td>0,6667</td><td>0,1667</td></tr>
+                    <tr><td>C2</td><td>Kesulitan tidur</td><td>20%</td><td>4,00</td><td>0,8000</td><td>0,1600</td></tr>
+                    <tr><td>C3</td><td>Kesulitan emosional</td><td>25%</td><td>4,00</td><td>0,8000</td><td>0,2000</td></tr>
+                    <tr><td>C4</td><td>Keterbatasan dukungan sosial</td><td>15%</td><td>3,67</td><td>0,7333</td><td>0,1100</td></tr>
+                    <tr><td>C5</td><td>Ketidakseimbangan aktivitas</td><td>15%</td><td>3,00</td><td>0,6000</td><td>0,0900</td></tr>
+                    <tr>
+                        <td colspan="5" style="text-align:right; font-weight:700;">Nilai akhir (Σ kontribusi)</td>
+                        <td style="font-weight:700;">0,7267 (72,67%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="wf-sub" style="margin-top:10px;">Normalisasi benefit = nilai kriteria ÷ 5. Kontribusi = bobot × normalisasi.</p>
+        </div>
+
+        <div class="wf-card">
+            <h3>Rekomendasi</h3>
+            <p style="margin:0;">Disarankan menghubungi layanan konseling kampus atau tenaga profesional untuk berdiskusi. Ini bukan diagnosis.</p>
+        </div>
+
+        <p class="wf-footer">Hasil bersifat skrining awal, bukan diagnosis medis.</p>
+    </main>
+</div>
+</body>
+</html>

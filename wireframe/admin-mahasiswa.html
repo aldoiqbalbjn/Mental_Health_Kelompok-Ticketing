@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe - Data Mahasiswa</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<header class="wf-topbar">
+    <div class="wf-brand"><span class="wf-logo">MC</span> MindCare Student</div>
+    <span class="wf-tag">Wireframe Admin</span>
+</header>
+
+<div class="wf-shell">
+    <aside class="wf-sidebar">
+        <h4>Menu Admin</h4>
+        <nav class="wf-nav">
+            <a href="#">Dashboard</a>
+            <a class="is-active" href="#">Data Mahasiswa</a>
+            <a href="#">Data Kriteria</a>
+            <a href="#">Data Pertanyaan</a>
+            <a href="#">Hasil SPK</a>
+            <a href="#">Laporan</a>
+            <a href="#">Keluar</a>
+        </nav>
+    </aside>
+
+    <main class="wf-main">
+        <div class="wf-page-head">
+            <div>
+                <h1>Data Mahasiswa</h1>
+                <p>Kelola akun dan profil mahasiswa.</p>
+            </div>
+            <button class="wf-btn">+ Tambah Mahasiswa</button>
+        </div>
+
+        <div class="wf-card" style="margin-bottom:16px;">
+            <div class="wf-grid cols-2">
+                <div class="wf-field"><label>Cari</label><input class="wf-input" placeholder="Nama / NIM / prodi"></div>
+                <div class="wf-field"><label>&nbsp;</label><button class="wf-btn">Cari</button></div>
+            </div>
+        </div>
+
+        <div class="wf-card">
+            <table class="wf-table">
+                <thead>
+                    <tr><th>NIM</th><th>Nama</th><th>Prodi</th><th>Angkatan</th><th>JK</th><th>Email</th><th>Aksi</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>23010001</td><td>Alya Ramadhan</td><td>Teknik Informatika</td><td>2023</td><td>L</td><td>mhs001@example.test</td><td><a href="#">Edit</a> · <a href="#">Hapus</a></td></tr>
+                    <tr><td>23010002</td><td>Bima Kurniawan</td><td>Sistem Informasi</td><td>2023</td><td>P</td><td>mhs002@example.test</td><td><a href="#">Edit</a> · <a href="#">Hapus</a></td></tr>
+                    <tr><td>23010003</td><td>Citra Puspita</td><td>Manajemen Informatika</td><td>2024</td><td>L</td><td>mhs003@example.test</td><td><a href="#">Edit</a> · <a href="#">Hapus</a></td></tr>
+                </tbody>
+            </table>
+            <p class="wf-sub" style="margin-top:12px;">Menampilkan 3 dari 100 mahasiswa.</p>
+        </div>
+
+        <div class="wf-card" style="margin-top:16px;">
+            <h3>Form Tambah / Edit Mahasiswa</h3>
+            <div class="wf-grid cols-2">
+                <div class="wf-field"><label>Username</label><input class="wf-input" placeholder="mhs101"></div>
+                <div class="wf-field"><label>Password</label><input class="wf-input" type="password" placeholder="Kosongkan jika tidak diubah"></div>
+                <div class="wf-field"><label>NIM</label><input class="wf-input"></div>
+                <div class="wf-field"><label>Nama</label><input class="wf-input"></div>
+                <div class="wf-field"><label>Prodi</label><input class="wf-input"></div>
+                <div class="wf-field"><label>Angkatan</label><input class="wf-input" placeholder="2023"></div>
+                <div class="wf-field"><label>Jenis Kelamin</label>
+                    <select class="wf-select"><option>L</option><option>P</option></select>
+                </div>
+                <div class="wf-field"><label>Email</label><input class="wf-input"></div>
+            </div>
+            <button class="wf-btn">Simpan</button>
+        </div>
+    </main>
+</div>
+</body>
+</html>
